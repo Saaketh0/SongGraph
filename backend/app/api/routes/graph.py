@@ -20,10 +20,13 @@ def graph_seed_song(song_id: str, db: Session = Depends(get_db)) -> GraphRespons
         raise HTTPException(status_code=404, detail=str(exc)) from exc
 
 
-@router.get("/artist/{artist_name}", response_model=GraphResponse)
+@router.get("/artist/{artist_name:path}", response_model=GraphResponse)
 def graph_seed_artist(artist_name: str, db: Session = Depends(get_db)) -> GraphResponse:
     service = GraphService(db)
-    return service.seed_from_artist(artist_name)
+    try:
+        return service.seed_from_artist(artist_name)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
 
 
 @router.get("/genre/{genre_name}", response_model=GraphResponse)
@@ -36,4 +39,3 @@ def graph_seed_genre(genre_name: str, db: Session = Depends(get_db)) -> GraphRes
 def graph_expand(payload: ExpandGraphRequest, db: Session = Depends(get_db)) -> GraphResponse:
     service = GraphService(db)
     return service.expand_graph(payload)
-

@@ -66,7 +66,10 @@ class GraphService:
         )
 
     def seed_from_artist(self, artist_name: str) -> GraphResponse:
-        songs = self.repository.get_songs_by_artist(artist_name=artist_name, limit=self.settings.artist_seed_cap)
+        songs = self.repository.get_songs_by_artist(
+            artist_name=artist_name,
+            limit=min(self.settings.artist_seed_cap, self.settings.graph_node_cap),
+        )
         nodes = [_node_from_song(song) for song in songs]
         return GraphResponse(
             nodes=nodes,
@@ -156,4 +159,3 @@ class GraphService:
                 reachedLimit=reached_limit,
             ),
         )
-
