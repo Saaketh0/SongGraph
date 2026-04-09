@@ -1,0 +1,191 @@
+{
+  "column_groups": {
+    "audio_categorical": [
+      "explicit",
+      "key",
+      "time_signature",
+      "mode"
+    ],
+    "audio_numeric": [
+      "duration_ms",
+      "valence",
+      "loudness",
+      "danceability",
+      "energy",
+      "tempo",
+      "acousticness",
+      "instrumentalness",
+      "liveness",
+      "speechiness"
+    ],
+    "identity": [
+      "track_id",
+      "artist_name",
+      "track_name"
+    ]
+  },
+  "default_fill_counts": {
+    "explicit": 1332058
+  },
+  "deterministic_fill": {
+    "artist_track_fill_counts": {
+      "acousticness": 0,
+      "danceability": 0,
+      "duration_ms": 49660,
+      "energy": 0,
+      "explicit": 64820,
+      "instrumentalness": 46863,
+      "key": 47695,
+      "liveness": 2821,
+      "loudness": 47114,
+      "mode": 47700,
+      "speechiness": 8144,
+      "tempo": 16,
+      "time_signature": 47753,
+      "track_id": 47744,
+      "valence": 0
+    },
+    "track_id_fill_counts": {
+      "acousticness": 0,
+      "artist_name": 80147,
+      "danceability": 0,
+      "duration_ms": 86895,
+      "energy": 0,
+      "explicit": 121720,
+      "instrumentalness": 3197,
+      "key": 0,
+      "liveness": 4209,
+      "loudness": 8485,
+      "mode": 0,
+      "speechiness": 4661,
+      "tempo": 0,
+      "time_signature": 0,
+      "track_name": 0,
+      "valence": 0
+    }
+  },
+  "final_profile": {
+    "column_count": 17,
+    "dtypes": {
+      "acousticness": "float64",
+      "artist_name": "object",
+      "danceability": "float64",
+      "duration_ms": "float64",
+      "energy": "float64",
+      "explicit": "float64",
+      "instrumentalness": "float64",
+      "key": "float64",
+      "liveness": "float64",
+      "loudness": "float64",
+      "mode": "float64",
+      "speechiness": "float64",
+      "tempo": "float64",
+      "time_signature": "float64",
+      "track_id": "object",
+      "track_name": "object",
+      "valence": "float64"
+    },
+    "duplicate_track_id_count": 206482,
+    "invalid_counts": {
+      "acousticness": 0,
+      "danceability": 0,
+      "energy": 0,
+      "instrumentalness": 0,
+      "liveness": 0,
+      "speechiness": 0,
+      "tempo": 0,
+      "time_signature": 0,
+      "valence": 0
+    },
+    "null_counts": {
+      "acousticness": 85432,
+      "artist_name": 424050,
+      "danceability": 435,
+      "duration_ms": 942330,
+      "energy": 435,
+      "explicit": 0,
+      "instrumentalness": 455043,
+      "key": 446596,
+      "liveness": 341534,
+      "loudness": 588680,
+      "mode": 446591,
+      "speechiness": 484728,
+      "tempo": 4701,
+      "time_signature": 536531,
+      "track_id": 446743,
+      "track_name": 19,
+      "valence": 85432
+    },
+    "row_count": 3375334,
+    "unique_track_id_count": 2722109
+  },
+  "input_path": "/Users/saake/SongGraph/data_cleaning/final_spotify_master_dataset.parquet",
+  "invalid_to_null_counts": {
+    "acousticness": 0,
+    "danceability": 0,
+    "energy": 0,
+    "instrumentalness": 0,
+    "liveness": 0,
+    "speechiness": 0,
+    "tempo": 4282,
+    "time_signature": 4365,
+    "valence": 0
+  },
+  "output_path": "/Users/saake/SongGraph/data_cleaning/outputs/cleaned/songs_pre_imputation.parquet",
+  "raw_profile": {
+    "column_count": 17,
+    "dtypes": {
+      "acousticness": "float64",
+      "artist_name": "object",
+      "danceability": "float64",
+      "duration_ms": "float64",
+      "energy": "float64",
+      "explicit": "float64",
+      "instrumentalness": "float64",
+      "key": "float64",
+      "liveness": "float64",
+      "loudness": "float64",
+      "mode": "float64",
+      "speechiness": "float64",
+      "tempo": "float64",
+      "time_signature": "float64",
+      "track_id": "object",
+      "track_name": "object",
+      "valence": "float64"
+    },
+    "duplicate_track_id_count": 158738,
+    "invalid_counts": {
+      "acousticness": 0,
+      "danceability": 0,
+      "energy": 0,
+      "instrumentalness": 0,
+      "liveness": 0,
+      "speechiness": 0,
+      "tempo": 4282,
+      "time_signature": 4365,
+      "valence": 0
+    },
+    "null_counts": {
+      "acousticness": 85432,
+      "artist_name": 504197,
+      "danceability": 435,
+      "duration_ms": 1078885,
+      "energy": 435,
+      "explicit": 1518598,
+      "instrumentalness": 505103,
+      "key": 494291,
+      "liveness": 348564,
+      "loudness": 644279,
+      "mode": 494291,
+      "speechiness": 497533,
+      "tempo": 435,
+      "time_signature": 579919,
+      "track_id": 494487,
+      "track_name": 17,
+      "valence": 85432
+    },
+    "row_count": 3375334,
+    "unique_track_id_count": 2722109
+  },
+  "report_path": "/Users/saake/SongGraph/data_cleaning/outputs/profiling/pre_imputation_report.json"
+}

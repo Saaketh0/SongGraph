@@ -1,0 +1,37 @@
+{
+  "data_path": "/Users/saake/SongGraph/data_cleaning/liveness_final.parquet",
+  "sample_size": 200000,
+  "num_boost_round": 200,
+  "orderings": [
+    "chromatic",
+    "fifths"
+  ],
+  "kernels": [
+    "gaussian_squared",
+    "gaussian_linear"
+  ],
+  "alpha_grid": [
+    0.4,
+    0.5
+  ],
+  "beta_grid": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "best_row": {
+    "model": "geometric",
+    "ordering": "chromatic",
+    "kernel": "gaussian_linear",
+    "alpha": 0.4,
+    "beta": 3.0,
+    "accuracy": 0.160625,
+    "f1_macro": 0.1231553615282162,
+    "mean_key_distance": 2.861675,
+    "median_key_distance": 3.0,
+    "within_1_semitone": 0.294,
+    "within_2_semitones": 0.4647,
+    "mean_2d_distance": 1.1917476654052734,
+    "median_2d_distance": 1.4142135381698608
+  }
+}

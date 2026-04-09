@@ -1,0 +1,365 @@
+{
+  "basic_profile": {
+    "row_count": 3168398,
+    "column_count": 25,
+    "dtypes": {
+      "acousticness": "float32",
+      "acousticness_missing": "int8",
+      "artist_name": "str",
+      "danceability": "float32",
+      "danceability_missing": "int8",
+      "energy": "float32",
+      "energy_missing": "int8",
+      "instrumentalness": "float32",
+      "instrumentalness_missing": "int8",
+      "key": "Int32",
+      "key_missing": "int8",
+      "liveness": "float32",
+      "liveness_missing": "int8",
+      "loudness": "float32",
+      "loudness_missing": "int8",
+      "mode": "float32",
+      "mode_missing": "int8",
+      "speechiness": "float32",
+      "speechiness_missing": "int8",
+      "tempo": "float32",
+      "tempo_missing": "int8",
+      "track_id": "str",
+      "track_name": "str",
+      "valence": "float32",
+      "valence_missing": "int8"
+    },
+    "null_counts_nonzero": {
+      "artist_name": 419232,
+      "track_id": 446729
+    },
+    "invalid_counts": {
+      "valence": 0,
+      "danceability": 0,
+      "energy": 0,
+      "acousticness": 0,
+      "instrumentalness": 0,
+      "liveness": 0,
+      "speechiness": 0,
+      "tempo": 0,
+      "time_signature": 0
+    }
+  },
+  "metadata_profile": {
+    "missing_track_id": 446729,
+    "missing_artist_name": 419232,
+    "missing_track_name": 0,
+    "duplicate_nonempty_track_id_rows": 0,
+    "duplicate_nonempty_track_name_artist_pairs": 20498,
+    "artist_name_list_like_prefix": 107,
+    "artist_name_semicolon_count": 15438,
+    "artist_name_comma_count": 88572,
+    "artist_name_leading_trailing_space_count": 0,
+    "track_name_leading_trailing_space_count": 0,
+    "track_id_leading_trailing_space_count": 0
+  },
+  "modeled_feature_profile": {
+    "valence": {
+      "flagged_rows": 84997,
+      "observed_summary": {
+        "count": 3083401,
+        "mean": 0.44531,
+        "std": 0.268432,
+        "min": 0.0,
+        "p25": 0.215,
+        "p50": 0.426,
+        "p75": 0.66,
+        "max": 1.0
+      },
+      "imputed_summary": {
+        "count": 84997,
+        "mean": 0.387634,
+        "std": 0.191287,
+        "min": 0.0,
+        "p25": 0.220982,
+        "p50": 0.423591,
+        "p75": 0.535221,
+        "max": 0.963067
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": 0.001916,
+      "observed_one_fraction": 2.1e-05,
+      "imputed_zero_fraction": 0.006283,
+      "imputed_one_fraction": 0.0
+    },
+    "loudness": {
+      "flagged_rows": 582397,
+      "observed_summary": {
+        "count": 2586001,
+        "mean": -10.406766,
+        "std": 6.798024,
+        "min": -55.0,
+        "p25": -12.886,
+        "p50": -8.583,
+        "p75": -5.965,
+        "max": 6.087
+      },
+      "imputed_summary": {
+        "count": 582397,
+        "mean": -11.255134,
+        "std": 6.267783,
+        "min": -27.340857,
+        "p25": -13.675663,
+        "p50": -8.677602,
+        "p75": -6.767854,
+        "max": 0.773735
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": null,
+      "observed_one_fraction": null,
+      "imputed_zero_fraction": null,
+      "imputed_one_fraction": null
+    },
+    "danceability": {
+      "flagged_rows": 0,
+      "observed_summary": {
+        "count": 3168398,
+        "mean": 0.528001,
+        "std": 0.195392,
+        "min": 0.0,
+        "p25": 0.392,
+        "p50": 0.539778,
+        "p75": 0.675377,
+        "max": 1.0
+      },
+      "imputed_summary": {
+        "count": 0,
+        "mean": null,
+        "std": null,
+        "min": null,
+        "p25": null,
+        "p50": null,
+        "p75": null,
+        "max": null
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": 0.001459,
+      "observed_one_fraction": 0.000144,
+      "imputed_zero_fraction": null,
+      "imputed_one_fraction": null
+    },
+    "energy": {
+      "flagged_rows": 0,
+      "observed_summary": {
+        "count": 3168398,
+        "mean": 0.566483,
+        "std": 0.28535,
+        "min": 0.0,
+        "p25": 0.34,
+        "p50": 0.602,
+        "p75": 0.813,
+        "max": 1.0
+      },
+      "imputed_summary": {
+        "count": 0,
+        "mean": null,
+        "std": null,
+        "min": null,
+        "p25": null,
+        "p50": null,
+        "p75": null,
+        "max": null
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": 0.000352,
+      "observed_one_fraction": 0.000925,
+      "imputed_zero_fraction": null,
+      "imputed_one_fraction": null
+    },
+    "tempo": {
+      "flagged_rows": 4113,
+      "observed_summary": {
+        "count": 3164285,
+        "mean": 119.844231,
+        "std": 30.409597,
+        "min": 30.018,
+        "p25": 96.0,
+        "p50": 119.987,
+        "p75": 139.509995,
+        "max": 249.992996
+      },
+      "imputed_summary": {
+        "count": 4113,
+        "mean": 111.653702,
+        "std": 12.442691,
+        "min": 76.541618,
+        "p25": 102.545662,
+        "p50": 111.031967,
+        "p75": 119.187477,
+        "max": 167.074707
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": null,
+      "observed_one_fraction": null,
+      "imputed_zero_fraction": null,
+      "imputed_one_fraction": null
+    },
+    "acousticness": {
+      "flagged_rows": 84997,
+      "observed_summary": {
+        "count": 3083401,
+        "mean": 0.38399,
+        "std": 0.372469,
+        "min": 0.0,
+        "p25": 0.020181,
+        "p50": 0.25,
+        "p75": 0.768072,
+        "max": 1.0
+      },
+      "imputed_summary": {
+        "count": 84997,
+        "mean": 0.679058,
+        "std": 0.206906,
+        "min": 0.0,
+        "p25": 0.512423,
+        "p50": 0.694023,
+        "p75": 0.861941,
+        "max": 1.0
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": 0.024948,
+      "observed_one_fraction": 0.002259,
+      "imputed_zero_fraction": 0.000447,
+      "imputed_one_fraction": 0.019318
+    },
+    "instrumentalness": {
+      "flagged_rows": 453954,
+      "observed_summary": {
+        "count": 2714444,
+        "mean": 0.292858,
+        "std": 0.379532,
+        "min": 0.0,
+        "p25": 4e-06,
+        "p50": 0.009509,
+        "p75": 0.738,
+        "max": 1.0
+      },
+      "imputed_summary": {
+        "count": 453954,
+        "mean": 0.152774,
+        "std": 0.135868,
+        "min": 0.0,
+        "p25": 0.053401,
+        "p50": 0.11304,
+        "p75": 0.218299,
+        "max": 1.0
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": 0.210203,
+      "observed_one_fraction": 8.1e-05,
+      "imputed_zero_fraction": 0.058563,
+      "imputed_one_fraction": 3.7e-05
+    },
+    "liveness": {
+      "flagged_rows": 327238,
+      "observed_summary": {
+        "count": 2841160,
+        "mean": 0.330778,
+        "std": 0.205751,
+        "min": 0.0,
+        "p25": 0.188679,
+        "p50": 0.252677,
+        "p75": 0.423671,
+        "max": 1.0
+      },
+      "imputed_summary": {
+        "count": 327238,
+        "mean": 0.4056,
+        "std": 0.093543,
+        "min": 0.025631,
+        "p25": 0.342391,
+        "p50": 0.391512,
+        "p75": 0.448947,
+        "max": 1.0
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": 0.000321,
+      "observed_one_fraction": 0.000597,
+      "imputed_zero_fraction": 0.0,
+      "imputed_one_fraction": 3e-06
+    },
+    "speechiness": {
+      "flagged_rows": 463113,
+      "observed_summary": {
+        "count": 2705285,
+        "mean": 0.343864,
+        "std": 0.19672,
+        "min": 0.0,
+        "p25": 0.226506,
+        "p50": 0.296988,
+        "p75": 0.415625,
+        "max": 1.0
+      },
+      "imputed_summary": {
+        "count": 463113,
+        "mean": 0.481623,
+        "std": 0.124082,
+        "min": 0.0,
+        "p25": 0.39157,
+        "p50": 0.468379,
+        "p75": 0.565842,
+        "max": 1.0
+      },
+      "current_nulls": 0,
+      "observed_zero_fraction": 0.002604,
+      "observed_one_fraction": 0.002285,
+      "imputed_zero_fraction": 4e-06,
+      "imputed_one_fraction": 5.2e-05
+    },
+    "key": {
+      "flagged_rows": 446136,
+      "current_nulls": 0,
+      "observed_distribution": {
+        "0": 320274,
+        "1": 240589,
+        "2": 304472,
+        "3": 94021,
+        "4": 214649,
+        "5": 226434,
+        "6": 162494,
+        "7": 334372,
+        "8": 159785,
+        "9": 285928,
+        "10": 180654,
+        "11": 198590
+      },
+      "imputed_distribution": {
+        "0": 197562,
+        "1": 144031,
+        "2": 18138,
+        "3": 51,
+        "4": 3,
+        "5": 74,
+        "6": 10,
+        "7": 82085,
+        "8": 4,
+        "9": 4178
+      }
+    },
+    "mode": {
+      "flagged_rows": 446134,
+      "current_nulls": 0,
+      "observed_distribution": {
+        "0.0": 972174,
+        "1.0": 1750090
+      },
+      "imputed_distribution": {
+        "1.0": 446134
+      }
+    }
+  },
+  "storage_recommendations": {
+    "key_can_be_int8": true,
+    "mode_can_be_int8": true,
+    "string_columns": {
+      "track_id_can_be_string_dtype": true,
+      "artist_name_can_be_string_dtype": true,
+      "track_name_can_be_string_dtype": true
+    }
+  }
+}

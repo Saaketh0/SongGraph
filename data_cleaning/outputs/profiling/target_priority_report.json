@@ -1,0 +1,140 @@
+{
+  "data_path": "/Users/saake/SongGraph/data_cleaning/outputs/cleaned/songs_pre_imputation_with_missingness_flags.parquet",
+  "notes": [
+    "This ranking is heuristic, not a guarantee of downstream gain.",
+    "Regression targets are ranked by a combination of missing-row feature availability and correlation-based downstream usefulness.",
+    "Classification targets key/mode are listed but not ranked in the regression-first priority score."
+  ],
+  "targets": [
+    {
+      "target": "loudness",
+      "target_type": "regression",
+      "missing_count": 588245,
+      "missing_pct": 0.17430003090462856,
+      "avg_non_null_fraction_on_missing_rows": 0.7572278557403803,
+      "median_non_null_fraction_on_missing_rows": 0.7,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": 0.34730142018756643,
+      "readiness_score": 0.5394874139109446,
+      "benefit_score": 0.9512909501020969,
+      "overall_priority_score": 0.5132094945474657
+    },
+    {
+      "target": "speechiness",
+      "target_type": "regression",
+      "missing_count": 484293,
+      "missing_pct": 0.14349851654819892,
+      "avg_non_null_fraction_on_missing_rows": 0.897620035804771,
+      "median_non_null_fraction_on_missing_rows": 1.0,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": 0.10138765060144428,
+      "readiness_score": 0.8057962447914506,
+      "benefit_score": 0.4902520892653033,
+      "overall_priority_score": 0.39504329253114445
+    },
+    {
+      "target": "liveness",
+      "target_type": "regression",
+      "missing_count": 341099,
+      "missing_pct": 0.10106939496559748,
+      "avg_non_null_fraction_on_missing_rows": 0.8689090264116871,
+      "median_non_null_fraction_on_missing_rows": 0.9,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": 0.10660845248529474,
+      "readiness_score": 0.7513345551064228,
+      "benefit_score": 0.40116904642360013,
+      "overall_priority_score": 0.30141216701714346
+    },
+    {
+      "target": "instrumentalness",
+      "target_type": "regression",
+      "missing_count": 454608,
+      "missing_pct": 0.13470269776962215,
+      "avg_non_null_fraction_on_missing_rows": 0.6888481944884381,
+      "median_non_null_fraction_on_missing_rows": 0.7,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": 0.21235420358627174,
+      "readiness_score": 0.4097785680503153,
+      "benefit_score": 0.646210032253177,
+      "overall_priority_score": 0.2648030216764549
+    },
+    {
+      "target": "acousticness",
+      "target_type": "regression",
+      "missing_count": 84997,
+      "missing_pct": 0.025185049982236505,
+      "avg_non_null_fraction_on_missing_rows": 0.7000000000000001,
+      "median_non_null_fraction_on_missing_rows": 0.7,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": 0.33917453376917617,
+      "readiness_score": 0.4309323409073842,
+      "benefit_score": 0.596187695541109,
+      "overall_priority_score": 0.25691655925970897
+    },
+    {
+      "target": "valence",
+      "target_type": "regression",
+      "missing_count": 84997,
+      "missing_pct": 0.025185049982236505,
+      "avg_non_null_fraction_on_missing_rows": 0.7000000000000001,
+      "median_non_null_fraction_on_missing_rows": 0.7,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": 0.25717706940501495,
+      "readiness_score": 0.4309323409073842,
+      "benefit_score": 0.4660285386598391,
+      "overall_priority_score": 0.20082676909433186
+    },
+    {
+      "target": "key",
+      "target_type": "classification",
+      "missing_count": 446161,
+      "missing_pct": 0.13219980805351508,
+      "avg_non_null_fraction_on_missing_rows": 0.6836955717779006,
+      "median_non_null_fraction_on_missing_rows": 0.7,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": NaN,
+      "readiness_score": 0.4000045982367385,
+      "benefit_score": 0.3033844741561764,
+      "overall_priority_score": NaN
+    },
+    {
+      "target": "mode",
+      "target_type": "classification",
+      "missing_count": 446156,
+      "missing_pct": 0.13219832652769756,
+      "avg_non_null_fraction_on_missing_rows": 0.6836931476882524,
+      "median_non_null_fraction_on_missing_rows": 0.7,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": NaN,
+      "readiness_score": 0.4,
+      "benefit_score": 0.30338107421227556,
+      "overall_priority_score": NaN
+    },
+    {
+      "target": "danceability",
+      "target_type": "regression",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "avg_non_null_fraction_on_missing_rows": 1.0,
+      "median_non_null_fraction_on_missing_rows": 1.0,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": 0.23302229663789314,
+      "readiness_score": 1.0,
+      "benefit_score": 0.36988931182342405,
+      "overall_priority_score": NaN
+    },
+    {
+      "target": "energy",
+      "target_type": "regression",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "avg_non_null_fraction_on_missing_rows": 1.0,
+      "median_non_null_fraction_on_missing_rows": 1.0,
+      "zero_signal_missing_rows": 0,
+      "mean_abs_corr_with_other_regression_targets": 0.3779870721149124,
+      "readiness_score": 1.0,
+      "benefit_score": 0.6,
+      "overall_priority_score": NaN
+    }
+  ]
+}

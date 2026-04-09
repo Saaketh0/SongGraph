@@ -1,0 +1,10 @@
+{
+  "input_path": "/Users/saake/SongGraph/data_cleaning/finalv1.parquet",
+  "output_path": "/Users/saake/SongGraph/data_cleaning/finalv2.parquet",
+  "missing_rows_imputed": 4113,
+  "metrics": {
+    "mae": 21.253650665283203,
+    "rmse": 26.79362680750779,
+    "r2": 0.2229498028755188
+  }
+}

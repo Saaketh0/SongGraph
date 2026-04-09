@@ -1,0 +1,8 @@
+{
+  "input_path": "/Users/saake/SongGraph/data_cleaning/finalv2.parquet",
+  "output_path": "/Users/saake/SongGraph/data_cleaning/finalv3.parquet",
+  "rows": 3168398,
+  "artist_name_nulls": 419232,
+  "artist_name_full_bracket_wrappers_before": 87,
+  "artist_name_full_bracket_wrappers_after": 0
+}

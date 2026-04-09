@@ -1,0 +1,11 @@
+{
+  "input_path": "/Users/saake/SongGraph/data_cleaning/liveness_final.parquet",
+  "output_path": "/Users/saake/SongGraph/data_cleaning/finalv1.parquet",
+  "observed_key_rows": 2928738,
+  "imputed_key_rows": 446161,
+  "num_boost_round": 200,
+  "alpha": 0.4,
+  "beta": 2.0,
+  "ordering": "chromatic",
+  "kernel": "gaussian_squared"
+}
