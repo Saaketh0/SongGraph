@@ -12,7 +12,7 @@ chunking:
     overlap: 50
 watch:
     debounce_ms: 500
-    last_index_time: 2026-04-08T00:04:10.23747-04:00
+    last_index_time: 2026-04-09T16:44:22.735857-04:00
     rpg_persist_interval_ms: 1000
     rpg_derived_debounce_ms: 300
     rpg_full_reconcile_interval_sec: 300

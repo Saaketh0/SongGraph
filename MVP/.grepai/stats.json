@@ -1,6 +1,0 @@
-{"timestamp":"2026-04-09T05:56:25Z","command_type":"search","output_mode":"compact","result_count":8,"output_tokens":256,"grep_tokens":12288}
-{"timestamp":"2026-04-09T05:57:18Z","command_type":"search","output_mode":"compact","result_count":6,"output_tokens":180,"grep_tokens":9216}
-{"timestamp":"2026-04-09T05:58:25Z","command_type":"search","output_mode":"full","result_count":5,"output_tokens":1203,"grep_tokens":7680}
-{"timestamp":"2026-04-09T05:58:32Z","command_type":"search","output_mode":"full","result_count":5,"output_tokens":1602,"grep_tokens":7680}
-{"timestamp":"2026-04-09T05:58:44Z","command_type":"search","output_mode":"full","result_count":5,"output_tokens":1476,"grep_tokens":7680}
-{"timestamp":"2026-04-09T18:58:49Z","command_type":"search","output_mode":"compact","result_count":10,"output_tokens":304,"grep_tokens":15360}
